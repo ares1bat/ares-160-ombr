@@ -31,3 +31,7 @@
 @media (max-width:520px){.facts{grid-template-columns:1fr}.path h3{font-size:24px}}
 @media (max-width:1480px){.nav a[href$="#stories"],.nav a[href$="#about"]{display:none}}
 @media (max-width:480px){.header .brand__sub{display:none}}
+/* mobile fix: PL/EU quick access + langs in menu */
+.mbar a.mbar__abroad{color:var(--gold-2);border-color:rgba(234,154,50,.6);background:rgba(234,154,50,.08)}
+.mbar a[aria-current]{outline:1px solid var(--gold)}
+.langs.langs--m{display:flex;width:max-content;margin-top:18px}
