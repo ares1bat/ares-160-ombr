@@ -35,3 +35,6 @@
 .mbar a.mbar__abroad{color:var(--gold-2);border-color:rgba(234,154,50,.6);background:rgba(234,154,50,.08)}
 .mbar a[aria-current]{outline:1px solid var(--gold)}
 .langs.langs--m{display:flex;width:max-content;margin-top:18px}
+/* mobile: language switch always visible in header */
+@media (max-width:900px){.header .langs{display:flex!important;padding:2px}.header .langs a{padding:6px 6px;font-size:11.5px}}
+@media (max-width:400px){.header .brand__name{font-size:18px}}
