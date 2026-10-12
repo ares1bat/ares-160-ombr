@@ -1,0 +1,33 @@
+/* v2 additions */
+.langs{display:flex;gap:2px;border:1px solid var(--line-2);border-radius:10px;padding:3px;font:600 12px var(--body)}
+.langs a{padding:6px 8px;border-radius:7px;color:var(--muted)}
+.langs a[aria-current]{background:var(--gold-dim);color:var(--gold-2)}
+.hero--sub{min-height:auto;padding:72px 0 64px}
+.hero--sub .hero__media{opacity:.55}
+.paths__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.path{display:block;padding:30px;border-radius:var(--radius);border:1px solid var(--line-2);background:var(--panel);transition:.2s}
+.path h3{font-family:var(--display);text-transform:uppercase;font-size:30px;margin:14px 0 8px}
+.path p{color:var(--muted)}
+.path--red{border-top:3px solid var(--red-2)}.path--gold{border-top:3px solid var(--gold)}
+.path:hover{transform:translateY(-3px);border-color:var(--gold)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fact{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.fact b{display:block;font-family:var(--display);font-size:30px;color:var(--gold-2);line-height:1.1}
+.fact p{color:var(--muted);font-size:14.5px;margin:10px 0 0}
+.src{font-size:.78em;color:var(--steel);text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
+.note{color:var(--muted);font-size:14px;margin-top:22px}
+.req{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.req .join-list li{margin:12px 0}
+.video{margin-top:28px}
+.video__link{display:flex;gap:16px;align-items:center;padding:20px;border:1px solid var(--line-2);border-radius:var(--radius);background:var(--panel)}
+.video__link .icon{width:40px;height:40px;color:var(--red-2);flex:none}
+.video__link small{display:block;color:var(--muted)}
+.lang-note{background:var(--gold-dim);border:1px dashed rgba(251,211,115,.55);border-radius:10px;padding:10px 14px;font-size:14px;color:var(--gold-2)}
+@media (max-width:900px){
+ .paths__grid,.req{grid-template-columns:1fr}
+ .facts{grid-template-columns:1fr 1fr}
+ .langs{display:none}
+}
+@media (max-width:520px){.facts{grid-template-columns:1fr}.path h3{font-size:24px}}
+@media (max-width:1480px){.nav a[href$="#stories"],.nav a[href$="#about"]{display:none}}
+@media (max-width:480px){.header .brand__sub{display:none}}

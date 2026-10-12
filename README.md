@@ -1,0 +1,19 @@
+# Сайт 1 МБ «Арес» 160 ОМБр — v2 (статичний прототип)
+
+Статичний HTML/CSS/JS, без збірки, відносні шляхи — працює на GitHub Pages (Settings → Pages → branch main, root).
+
+## Сторінки
+- `index.html` — головна (UA): два шляхи — повернення з СЗЧ і вступ з-за кордону
+- `szch.html` — повернення з СЗЧ (1519, анонімна заявка, «ми ніколи не просимо гроші»)
+- `abroad.html` — вступ з Польщі/ЄС через Український легіон (процес, вимоги, документи, FAQ, контакти Любліна, кнопка на форму legion.army.gov.ua)
+- `pl/index.html`, `en/index.html` — короткі посадкові PL/EN (робочий переклад)
+
+## Ресурси
+`assets/css/style.css` (з прототипу v0.1), `assets/css/v2.css` (доповнення v2), `assets/js/main.js`, шрифти Oswald/Inter, шеврон з `/workspace/brand/assets`.
+
+## Важливо
+- Форми — демо, нічого не надсилають. Офіційна заявка з-за кордону — лише через https://legion.army.gov.ua/#join (вбудувати iframe не можна: X-Frame-Options SAMEORIGIN).
+- Позначки `[уточнити]` — неперевірені факти. Контакти взято лише з legion.army.gov.ua.
+- `noindex` до погодження.
+- Скриншоти: `python _shots/render.py` (потрібен локальний сервер `python3 -m http.server 8765` у корені; через file:// Chrome блокує preload шрифту).
+- Концепція: `/workspace/concept_v2/CONCEPT.md`.
